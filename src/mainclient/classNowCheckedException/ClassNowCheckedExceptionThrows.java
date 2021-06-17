@@ -76,4 +76,24 @@ public class ClassNowCheckedExceptionThrows {
 			throw new ClassNowCheckedExceptionClientSub();
 		}
 	}
+
+	public int throwsVariableException(boolean b) {
+		ClassNowCheckedException e = new ClassNowCheckedException();
+		if (b) {
+			return 0;
+		}
+		else {
+			throw e;
+		}
+	}
+
+	public int throwsVariableExceptionChecked(boolean b) throws ClassNowCheckedException {
+		ClassNowCheckedException e = new ClassNowCheckedException();
+		if (b) {
+			return 0;
+		}
+		else {
+			throw e;
+		}
+	}
 }
