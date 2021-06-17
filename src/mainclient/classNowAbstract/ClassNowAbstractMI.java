@@ -11,6 +11,10 @@ public class ClassNowAbstractMI {
 	public void createObjectParams() {
 		ClassNowAbstract c = new ClassNowAbstract(3);
 	}
+
+	public void createSubObject() {
+		ClassNowAbstractExt c = new ClassNowAbstractExt(3);
+	}
 	
 	public void accessConstant() {
 		int i = ClassNowAbstract.CTE;
